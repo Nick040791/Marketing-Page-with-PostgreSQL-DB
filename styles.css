@@ -1,13 +1,7 @@
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #f9f9f9; /* Light background color */
     color: #333; /* Darker text for contrast */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 header {
@@ -23,17 +17,8 @@ header h1 {
 }
 
 nav ul {
-    list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
     margin: 0;
-}
-
-nav ul li {
-    margin: 0 1rem;
-    display: flex;
-    align-items: center; /* Center the bullets with the text */
 }
 
 nav ul li a {
@@ -43,9 +28,7 @@ nav ul li a {
 }
 
 main {
-    padding: 2rem;
-    max-width: 800px;
-    width: 100%;
+    padding: 2rem 0; /* Adjust padding for Bootstrap container */
 }
 
 section {
@@ -63,34 +46,24 @@ footer {
     text-align: center;
     padding: 1rem 0;
     width: 100%;
-    position: fixed;
-    bottom: 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 400px; /* Ensure form stays responsive */
+    margin: 0 auto; /* Center the form */
 }
 
 form label {
-    margin-top: 1rem;
     font-weight: bold;
 }
 
 form input, form textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 form button {
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
     background-color: #4CAF50; /* Match header color */
     color: #fff;
     border: none;
