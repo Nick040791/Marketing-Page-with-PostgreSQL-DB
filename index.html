@@ -21,26 +21,26 @@
 </head>
 <body>
     <header>
-        <h1>Kyba Marketing LLC</h1>
+        <h1 class="text-center">Kyba Marketing LLC</h1>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <img class="img-responsive" src="RmFlerPzZseUCXwl-generated_image.jpg" alt="SEO Image">
-        <section id="home">
+    <main class="container">
+        <img class="img-fluid mx-auto d-block" src="RmFlerPzZseUCXwl-generated_image.jpg" alt="SEO Image">
+        <section id="home" class="text-center">
             <h2>Welcome to Kyba Marketing LLC</h2>
             <p>We specialize in Search Engine Optimization for small businesses in Missouri.</p>
         </section>
-        <section id="services">
+        <section id="services" class="text-center">
             <h2>Our Services</h2>
             <p>We offer a range of SEO services to help your business grow.</p>
-            <ul>
+            <ul class="list-unstyled">
                 <li>Keyword Research</li>
                 <li>On-Page SEO</li>
                 <li>Off-Page SEO</li>
@@ -50,30 +50,38 @@
                 <li>SEO Strategy</li>
             </ul>
         </section>
-        <section id="about">
+        <section id="about" class="text-center">
             <h2>About Us</h2>
             <p>At Kyba Marketing, we specialize in empowering small businesses to thrive in the digital world. Our mission is to enhance your online presence and help you connect with your audience through cutting-edge SEO strategies, creative web solutions, and tailored marketing services.
                 We understand the unique challenges small businesses face, and that’s why we craft personalized, results-driven campaigns that align with your goals. Whether you’re looking to climb search rankings, expand your reach on social media, or build a standout website, our team is here to guide you every step of the way.
                 Kyba Marketing isn’t just about services—it’s about building partnerships. Your success is our success, and we’re passionate about delivering measurable results that make a real difference.
                 Let’s take your business to the next level, together.</p>
         </section>
-        <section id="contact">
+        <section id="contact" class="text-center">
             <h2>Contact Us</h2>
             <p>Get in touch with us to learn more about our services.</p>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="businessName">Business Name:</label>
-                <input type="text" id="businessName" name="businessName" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
+            <form id="contactForm" class="mx-auto" style="max-width: 400px;">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="businessName">Business Name:</label>
+                    <input type="text" id="businessName" name="businessName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Submit</button>
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="text-center">
         <p>&copy; 2023 Kyba Marketing LLC. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
